@@ -3,14 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>喵任務 — 讓孩子自己想做的習慣養成 APP</title>
-  <meta name="description" content="喵任務是一款結合扭蛋獎勵的兒童習慣養成 APP。家長設定任務，小朋友完成就能轉扭蛋抽獎品。免費下載，Android 適用。">
-  <meta name="keywords" content="喵任務,兒童習慣養成,親子APP,任務獎勵,扭蛋,正向教養,做家事,寫功課,自律,小學生">
-  <meta property="og:title" content="喵任務 — 讓孩子自己想做的習慣養成 APP">
-  <meta property="og:description" content="把每天該做的事變成遊戲任務，完成就能轉扭蛋抽獎品！不用催不用罵，孩子自己搶著做。">
+  <title>喵任務 — AI 教練 × 神秘獎勵，孩子主動養成好習慣的親子 APP</title>
+  <meta name="description" content="喵任務是一款結合 AI 育兒教練與神秘獎勵輪盤的兒童習慣養成 APP。家長設定任務，孩子完成就能轉輪盤獲得驚喜獎勵。成就系統、排行榜、許願池，讓孩子從被催促變成搶著做。免費下載，iOS / Android 雙平台。">
+  <meta name="keywords" content="喵任務,兒童習慣養成,親子APP,神秘獎勵,AI育兒,正向教養,任務獎勵,自律,幼兒園,小學生,做家事,寫功課,獎勵輪盤,親子互動,遊戲化教育,排行榜,成就系統">
+  <meta property="og:title" content="喵任務 — AI 教練 × 神秘獎勵，孩子主動養成好習慣">
+  <meta property="og:description" content="把每天該做的事變成遊戲任務，完成就能轉輪盤贏神秘獎勵！AI 目標教練幫你規劃，不用催不用罵，孩子自己搶著做。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="og-image.png">
   <link rel="icon" type="image/png" href="icon.png">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alalfrog666.github.io/miaorenwu/">
+  <!-- Apple Smart App Banner（iOS App Store 上架後啟用） -->
+  <!-- <meta name="apple-itunes-app" content="app-id=6761867436"> -->
+  <!-- JSON-LD 結構化資料 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "喵任務",
+    "alternateName": "Meow Tasks",
+    "description": "結合 AI 育兒教練與神秘獎勵輪盤的兒童習慣養成 APP，專為親子設計",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "Android, iOS",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TWD",
+        "description": "免費版"
+      },
+      {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "TWD",
+        "description": "Pro 月費方案"
+      }
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "喵任務"
+    },
+    "inLanguage": "zh-TW"
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -80,6 +115,10 @@
     }
     .btn-primary {
       background: #34A853;
+      color: white;
+    }
+    .btn-apple {
+      background: #000;
       color: white;
     }
     .btn-secondary {
@@ -316,11 +355,16 @@
     <img src="icon.png" alt="喵任務 APP 圖示" class="hero-icon">
     <h1>喵任務</h1>
     <p class="tagline">讓孩子自己想做的習慣養成 APP</p>
-    <p class="subtitle">把每天該做的事變成遊戲任務，完成就能轉扭蛋抽獎品。不用催不用罵，孩子自己搶著做！</p>
+    <p class="subtitle">把每天該做的事變成遊戲任務，完成就能轉輪盤贏神秘獎勵。AI 教練幫你規劃目標，不用催不用罵，孩子自己搶著做！</p>
     <div class="download-section">
       <a href="https://play.google.com/apps/testing/com.taskgacha.app" class="btn btn-primary" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.593-2.302 2.593-2.302zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
         Google Play 下載（免費）
+      </a>
+      <!-- TODO: App Store 上架後填入正確連結 -->
+      <a href="#" class="btn btn-apple" target="_blank">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store 下載（免費）
       </a>
       <p class="download-note">目前為測試版，需先加入測試群組</p>
       <a href="https://groups.google.com/g/miaorenwu-test" class="btn btn-secondary" target="_blank">
@@ -367,8 +411,8 @@
       <div class="step">
         <div class="step-num" style="background:#6BCB77;">3</div>
         <div class="step-content">
-          <h3>轉扭蛋抽獎品</h3>
-          <p>用獎券轉扭蛋，獎品由家長自訂：看卡通、去公園、吃冰淇淋...</p>
+          <h3>轉輪盤拿神秘獎勵</h3>
+          <p>用獎券轉動獎勵輪盤，獎勵由家長自訂：看卡通、去公園、吃冰淇淋...每次都是驚喜！</p>
         </div>
       </div>
       <div class="step">
@@ -383,27 +427,27 @@
 
   <!-- What's New -->
   <section class="features" style="background:#FFF8E1; padding-top:48px; padding-bottom:48px; max-width:100%;">
-    <h2 style="color:#F57F17;">🆕 v0.6 重大更新</h2>
+    <h2 style="color:#F57F17;">最新功能</h2>
     <div class="feature-grid" style="max-width:600px; margin:0 auto;">
       <div class="feature-card" style="border-left:4px solid #7C4DFF;">
         <div class="emoji">🤖</div>
         <h3>AI 目標教練</h3>
-        <p>輸入成長目標，AI 自動拆解成每日任務計畫，一鍵匯入</p>
+        <p>輸入成長目標和孩子年齡，AI 自動拆解成階段性任務，一鍵匯入清單</p>
       </div>
       <div class="feature-card" style="border-left:4px solid #FF6B9D;">
-        <div class="emoji">🎫</div>
-        <h3>兌換碼系統</h3>
-        <p>測試回饋即可獲得 Pro 半年兌換碼，感謝每一位測試夥伴</p>
+        <div class="emoji">🌟</div>
+        <h3>許願池</h3>
+        <p>孩子自己提出想要的獎勵，爸媽審核後加入獎勵池</p>
       </div>
       <div class="feature-card" style="border-left:4px solid #26C6DA;">
-        <div class="emoji">📊</div>
-        <h3>月報卡</h3>
-        <p>每月自動統計完成率、連續天數，一目瞭然掌握孩子進步</p>
+        <div class="emoji">🏆</div>
+        <h3>成就系統</h3>
+        <p>50+ 種成就稱號，從「小小冒險家」到「傳說任務王」，激發榮譽感</p>
       </div>
       <div class="feature-card" style="border-left:4px solid #FFD93D;">
-        <div class="emoji">🏆</div>
-        <h3>成就稱號</h3>
-        <p>14 個里程碑稱號，從「小小冒險家」到「傳說任務王」</p>
+        <div class="emoji">🏅</div>
+        <h3>排行榜</h3>
+        <p>手足良性競爭！本週完成數、連續天數、總完成數三種排名</p>
       </div>
     </div>
   </section>
@@ -413,9 +457,9 @@
     <h2>完整功能</h2>
     <div class="feature-grid">
       <div class="feature-card">
-        <div class="emoji">🎰</div>
-        <h3>扭蛋抽獎</h3>
-        <p>隨機獎品比固定集點更有吸引力</p>
+        <div class="emoji">🎡</div>
+        <h3>神秘獎勵輪盤</h3>
+        <p>轉動輪盤贏得驚喜獎勵，比固定集點更有吸引力</p>
       </div>
       <div class="feature-card">
         <div class="emoji">📋</div>
@@ -461,7 +505,7 @@
     <div class="checklist">
       <div class="check-item">
         <span class="check-icon">&#10003;</span>
-        完全免費，沒有廣告
+        免費下載、無廣告，可選 Pro 升級
       </div>
       <div class="check-item">
         <span class="check-icon">&#10003;</span>
@@ -483,6 +527,10 @@
         <span class="check-icon">&#10003;</span>
         資料安全，每個家庭完全隔離
       </div>
+      <div class="check-item">
+        <span class="check-icon">&#10003;</span>
+        iOS 和 Android 雙平台支援
+      </div>
     </div>
   </section>
 
@@ -493,7 +541,12 @@
     <div class="download-section">
       <a href="https://play.google.com/apps/testing/com.taskgacha.app" class="btn btn-primary" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.593-2.302 2.593-2.302zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
-        立即下載（免費）
+        Google Play 下載（免費）
+      </a>
+      <!-- TODO: App Store 上架後填入正確連結 -->
+      <a href="#" class="btn btn-apple" target="_blank">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store 下載（免費）
       </a>
       <a href="https://groups.google.com/g/miaorenwu-test" class="btn btn-secondary" target="_blank">
         先加入測試群組
@@ -503,10 +556,11 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>喵任務 — 讓孩子自己想做的習慣養成 APP</p>
+    <p>喵任務 — AI 教練 × 神秘獎勵，孩子主動養成好習慣</p>
     <div class="links">
       <a href="https://www.threads.com/@then.agrey" target="_blank">Threads</a>
-      <a href="privacy.html">隱私權政策</a>
+      <a href="https://task-gacha-api-production.up.railway.app/privacy-policy" target="_blank">隱私權政策</a>
+      <a href="mailto:alalfrog666@gmail.com">聯絡我們</a>
     </div>
     <p style="margin-top:12px;">&copy; 2026 喵任務</p>
   </footer>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alalfrog666.github.io/miaorenwu/sitemap.xml
