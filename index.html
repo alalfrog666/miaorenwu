@@ -565,5 +565,28 @@
     <p style="margin-top:12px;">&copy; 2026 喵任務</p>
   </footer>
 
+  <!-- 推薦碼 Deep Link -->
+  <script>
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var ref = params.get('ref');
+    if (ref) {
+      // 存到 localStorage（APP 開啟時讀取）
+      localStorage.setItem('meow_ref', ref);
+      // Google Play 下載連結帶上 referrer
+      var gpLinks = document.querySelectorAll('a[href*="play.google.com"]');
+      gpLinks.forEach(function(a) {
+        var url = new URL(a.href);
+        url.searchParams.set('referrer', 'ref_' + ref);
+        a.href = url.toString();
+      });
+      // 顯示推薦提示
+      var hero = document.querySelector('.subtitle');
+      if (hero) {
+        hero.innerHTML += '<br><strong style="color:#FF6B9D;">朋友推薦你來的！下載後雙方都能獲得 7 天 Pro 體驗</strong>';
+      }
+    }
+  })();
+  </script>
 </body>
 </html>
