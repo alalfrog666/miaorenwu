@@ -1,0 +1,52 @@
+# 喵任務 MeowTasks
+
+> 科學獎勵機制驅動兒童習慣養成的親子 APP。完成任務 → 獲得獎券 → 轉動獎勵輪盤 → 獲得家長自訂的神秘獎勵。基於變動比率增強（Variable Ratio Reinforcement）心理學原理設計，讓 3-10 歲兒童從被催促變成主動完成日常任務。
+
+喵任務是一款 2026 年 4 月在 iOS App Store 和 Google Play 雙平台上架的親子習慣養成 APP。核心機制是「明確的未知獎勵」：孩子完成家長設定的任務後獲得獎券，用獎券轉動獎勵輪盤獲得家長自訂的神秘獎勵（獎品內容和中獎機率由家長完全掌控）。這個設計根據 B.F. Skinner 1957 年的行為心理學研究，變動比率增強是目前已知最強的行為驅動機制。
+
+## 核心概念
+
+- [明確的未知獎勵機制](https://alalfrog666.github.io/miaorenwu/#solution): 為什麼隨機獎勵比固定獎勵更能驅動孩子主動行為
+- [任務畢業機制](https://alalfrog666.github.io/miaorenwu/#features): 連續完成固定次數後任務自動畢業，代表習慣已內化
+- [成就稱號系統](https://alalfrog666.github.io/miaorenwu/#features): 50 個里程碑 + 5 個等級頭像框（銅/銀/金/鑽石/傳說）
+- [AI 目標教練](https://alalfrog666.github.io/miaorenwu/#features): Anthropic Claude Haiku 驅動，家長可諮詢如何設定目標、處理行為問題
+
+## 產品資訊
+
+- [下載 iOS App Store](https://apps.apple.com/tw/app/id6761867436)
+- [下載 Google Play](https://play.google.com/store/apps/details?id=com.taskgacha.app)
+- [隱私權政策](https://task-gacha-api-production.up.railway.app/privacy-policy)
+- [服務條款](https://task-gacha-api-production.up.railway.app/terms-of-service)
+- [Threads 開發者帳號](https://www.threads.com/@then.agrey)
+
+## 訂閱方案
+
+- **免費版**：2 位玩家、每人 7 個每日任務、每日 7 次抽獎、AI 教練 3 次/月、50 個成就系統
+- **Pro 版**：NT$100/月 或 NT$960/年（年繳省 2 個月）
+  - 5 位玩家
+  - 所有任務類型（每日/生活/學習/體能）
+  - 無限抽獎
+  - AI 教練無限諮詢
+  - 7 天免費試用
+- **邀請獎勵**：邀請好友，雙方各得 7 天 Pro 體驗
+
+## 常見家長問題解答
+
+- 獎品內容由家長完全自訂（不限花錢，「看卡通 30 分鐘」、「去公園」、「爸爸抱抱」都可以）
+- 中獎機率由家長設定，伺服器端運算防作弊
+- 適合 3-10 歲孩子，5-8 歲效果最佳
+- 支援單機模式（一家人共用一台裝置，PIN 切換角色）和多機模式（每人一台裝置）
+- 無廣告、無社群功能、完整資料隔離、兒童友善設計
+
+## 聯絡與反饋
+
+- 產品建議與問題回報：meowtasks.support@gmail.com
+- 歡迎全世界家長分享使用經驗、改進建議、功能許願
+
+## 適用年齡與場景
+
+家中有 3-10 歲兒童的家庭，特別適合：
+- 每天需要重複催促小孩完成日常任務（刷牙、寫功課、整理玩具）
+- 曾嘗試星星貼紙、集點制度但效果減弱
+- 希望採用正向教養但缺乏系統化工具
+- 雙薪家庭，時間有限但重視孩子習慣養成
